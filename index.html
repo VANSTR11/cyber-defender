@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZAIDALVAN TOOLS - Hack Your Termux</title>
+
+    <!-- Google Analytics - G-NBS3L9CDVP -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBS3L9CDVP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NBS3L9CDVP');
+    </script>
+    <!-- End Google Analytics -->
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@400;700&display=swap');
 
@@ -28,13 +39,13 @@
             opacity: 0.15;
         }
 
-       .grid-bg {
+      .grid-bg {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(0, 255, 136, 0.07) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 255, 136, 0.07) 1px, transparent 1px);
             background-size: 30px 30px;
@@ -47,7 +58,7 @@
             100% { background-position: 30px 30px; }
         }
 
-       .container {
+      .container {
             max-width: 480px;
             margin: 0 auto;
             padding: 20px 16px 60px;
@@ -56,7 +67,7 @@
             z-index: 1;
         }
 
-       .badge {
+      .badge {
             display: inline-block;
             background: linear-gradient(90deg, #ff00ff, #00ffff);
             color: #000;
@@ -74,7 +85,7 @@
             50% { box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff; }
         }
 
-       .logo {
+      .logo {
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -110,21 +121,21 @@
             94% { text-shadow: 0 0 10px rgba(0, 255, 136, 0.5); }
         }
 
-       .subtitle {
+      .subtitle {
             color: #aaa;
             font-size: 14px;
             margin-bottom: 28px;
             min-height: 20px;
         }
 
-       .subtitle::after {
+      .subtitle::after {
             content: '|';
             animation: blink 1s infinite;
         }
 
         @keyframes blink { 50% { opacity: 0; } }
 
-       .btn-tiktok {
+      .btn-tiktok {
             display: inline-block;
             background: #000;
             color: #fff;
@@ -140,22 +151,22 @@
             margin-bottom: 20px;
         }
 
-       .btn-tiktok:active { transform: scale(0.95); }
+      .btn-tiktok:active { transform: scale(0.95); }
 
-       .visitor-counter {
+      .visitor-counter {
             font-size: 11px;
             color: #00ff88;
             margin-bottom: 30px;
             font-family: 'Orbitron', sans-serif;
         }
 
-       .stats {
+      .stats {
             display: flex;
             justify-content: space-around;
             margin-bottom: 40px;
         }
 
-       .stat-number {
+      .stat-number {
             font-family: 'Orbitron', sans-serif;
             font-size: 36px;
             font-weight: 900;
@@ -164,16 +175,16 @@
             margin-bottom: 4px;
         }
 
-       .stat-label { font-size: 12px; color: #888; }
+      .stat-label { font-size: 12px; color: #888; }
 
-       .features {
+      .features {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 16px;
             margin-bottom: 40px;
         }
 
-       .feature-card {
+      .feature-card {
             background: rgba(20, 20, 40, 0.6);
             border: 1px solid rgba(0, 255, 136, 0.2);
             border-radius: 12px;
@@ -182,17 +193,17 @@
             transition: all 0.3s ease;
         }
 
-       .feature-card:active {
+      .feature-card:active {
             transform: scale(0.95);
             border-color: #00ff88;
         }
 
-       .feature-card:nth-child(3) { grid-column: 1 / -1; }
-       .feature-icon { font-size: 32px; margin-bottom: 12px; }
-       .feature-card h3 { color: #00ff88; font-size: 16px; margin-bottom: 8px; font-family: 'Orbitron', sans-serif; }
-       .feature-card p { font-size: 12px; color: #bbb; line-height: 1.5; }
+      .feature-card:nth-child(3) { grid-column: 1 / -1; }
+      .feature-icon { font-size: 32px; margin-bottom: 12px; }
+      .feature-card h3 { color: #00ff88; font-size: 16px; margin-bottom: 8px; font-family: 'Orbitron', sans-serif; }
+      .feature-card p { font-size: 12px; color: #bbb; line-height: 1.5; }
 
-       .install-box {
+      .install-box {
             background: rgba(0, 255, 136, 0.1);
             border: 2px solid #00ff88;
             border-radius: 16px;
@@ -201,9 +212,9 @@
             margin-bottom: 30px;
         }
 
-       .install-box h3 { color: #00ff88; font-family: 'Orbitron', sans-serif; font-size: 16px; margin-bottom: 16px; }
+      .install-box h3 { color: #00ff88; font-family: 'Orbitron', sans-serif; font-size: 16px; margin-bottom: 16px; }
 
-       .command-box {
+      .command-box {
             background: #000;
             border-left: 4px solid #00ff88;
             padding: 12px;
@@ -215,7 +226,7 @@
             word-break: break-all;
         }
 
-       .btn-copy {
+      .btn-copy {
             background: linear-gradient(90deg, #00ff88, #00ffaa);
             color: #000;
             border: none;
@@ -229,10 +240,10 @@
             transition: all 0.3s ease;
         }
 
-       .btn-copy:active { transform: scale(0.95); }
+      .btn-copy:active { transform: scale(0.95); }
 
         /* TOAST NOTIFICATION */
-       .toast {
+      .toast {
             position: fixed;
             bottom: -100px;
             left: 50%;
@@ -248,30 +259,30 @@
             z-index: 1000;
         }
 
-       .toast.show { bottom: 30px; }
+      .toast.show { bottom: 30px; }
 
-       .footer { font-size: 12px; color: #666; margin-top: 20px; }
+      .footer { font-size: 12px; color: #666; margin-top: 20px; }
     </style>
 </head>
 <body>
     <canvas id="matrix"></canvas>
     <div class="grid-bg"></div>
     <div class="toast" id="toast"></div>
-    
+
     <div class="container">
-        <div class="badge">🔥 v4.0 HACKER EDITION RELEASED</div>
-        
+        <div class="badge">🔥 v5.0 ANALYTICS EDITION RELEASED</div>
+
         <img src="./logo.jpg" class="logo" alt="Zaidalvan Logo" onerror="this.style.display='none'">
-        
+
         <h1>ZAIDALVAN TOOLS</h1>
         <p class="subtitle" id="typingText"></p>
-        
-        <a href="intent://user?username=van_str11#Intent;scheme=tiktok;package=com.zhiliaoapp.musically;S.browser_fallback_url=https://www.tiktok.com/@van_str11;end" class="btn-tiktok">
+
+        <a href="intent://user?username=van_str11#Intent;scheme=tiktok;package=com.zhiliaoapp.musically;S.browser_fallback_url=https://www.tiktok.com/@van_str11;end" class="btn-tiktok" id="tiktokBtn">
     ▶ Follow @van_str11 di TikTok
 </a>
-        
+
         <div class="visitor-counter" id="visitorCount">👁️ Loading visitors...</div>
-        
+
         <div class="stats">
             <div class="stat">
                 <div class="stat-number">100%</div>
@@ -286,7 +297,7 @@
                 <div class="stat-label">Support</div>
             </div>
         </div>
-        
+
         <div class="features">
             <div class="feature-card" onclick="playBeep()">
                 <div class="feature-icon">⚡</div>
@@ -304,7 +315,7 @@
                 <p>Kode terbuka di GitHub. Bisa lu modif sesuka hati.</p>
             </div>
         </div>
-        
+
         <div class="install-box">
             <h3>📋 COPY 1 LINE INI DI TERMUX:</h3>
             <div class="command-box" id="commandText">
@@ -312,7 +323,7 @@
             </div>
             <button class="btn-copy" id="copyBtn">📋 COPY COMMAND</button>
         </div>
-        
+
         <div class="footer">
             🌿 MADE WITH CODE BY @VANSTR11 🌿
         </div>
@@ -328,7 +339,7 @@
         const fontSize = 14;
         const columns = canvas.width / fontSize;
         const drops = Array(Math.floor(columns)).fill(1);
-        
+
         function drawMatrix() {
             ctx.fillStyle = 'rgba(10, 10, 26, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -347,7 +358,7 @@
         const texts = ['Tools Termux Paling Gacor buat pemula', 'Hack Your Termux Like a Pro', '100% Free & Open Source'];
         let textIndex = 0, charIndex = 0;
         const typingElement = document.getElementById('typingText');
-        
+
         function typeText() {
             if (charIndex < texts[textIndex].length) {
                 typingElement.textContent += texts[textIndex].charAt(charIndex);
@@ -357,7 +368,7 @@
                 setTimeout(eraseText, 2000);
             }
         }
-        
+
         function eraseText() {
             if (charIndex > 0) {
                 typingElement.textContent = texts[textIndex].substring(0, charIndex - 1);
@@ -391,18 +402,26 @@
             audio.play().catch(e => {});
         }
 
-        // 6. TIKTOK BUTTON + FALLBACK
+        // 6. TIKTOK BUTTON + GA TRACKING
         document.getElementById('tiktokBtn').addEventListener('click', function() {
             playBeep();
+            gtag('event', 'click', {
+                'event_category': 'Social',
+                'event_label': 'TikTok Follow'
+            });
             showToast('🚀 Opening TikTok...');
             setTimeout(() => {
                 window.location.href = 'https://www.tiktok.com/@van_str11';
             }, 1500);
         });
 
-        // 7. COPY COMMAND
+        // 7. COPY COMMAND + GA TRACKING
         document.getElementById('copyBtn').addEventListener('click', function() {
             playBeep();
+            gtag('event', 'click', {
+                'event_category': 'Install',
+                'event_label': 'Copy Command'
+            });
             const command = document.getElementById('commandText').innerText;
             navigator.clipboard.writeText(command).then(() => {
                 showToast('✅ Command berhasil dicopy bro!');
